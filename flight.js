@@ -7,7 +7,7 @@ data = []
 
 client
   .after(10000, function() {
-    this.left(0.1);
+    this.front(0.1);
   })
   .after(3000, function() {
     this.stop();
