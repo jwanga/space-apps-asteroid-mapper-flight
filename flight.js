@@ -7,16 +7,7 @@ data = []
 
 client
   .after(10000, function() {
-    this.up(0.2);
-  })
-  .after(3000, function() {
-    this.up(0.1);
-  })
-  .after(3000, function() {
-      this.down(0.2);
-        })
-  .after(3000, function() {
-	    this.down(0.1);
+    this.left(0.1);
   })
   .after(3000, function() {
     this.stop();
@@ -24,5 +15,5 @@ client
     console.log(JSON.stringify(data));
   })
   .on('navdata', function(e) {
-  data.push(e);
+    data.push(e);
   });
